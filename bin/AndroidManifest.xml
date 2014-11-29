@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ucko.osnovno"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".PocetnaStrana"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Uredjivanje"
+            android:label="@string/title_activity_uredjivanje"
+            android:parentActivityName=".PocetnaStrana" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ucko.osnovno.PocetnaStrana" />
+        </activity>
+        <activity
+            android:name="com.ucko.novo.NapraviNovo"
+            android:label="@string/title_activity_napravi_novo"
+            android:parentActivityName=".PocetnaStrana" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ucko.osnovno.PocetnaStrana" />
+        </activity>
+        <activity
+            android:name=".NapraviNovo"
+            android:label="@string/title_activity_napravi_novo"
+            android:parentActivityName=".PocetnaStrana" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ucko.osnovno.PocetnaStrana" />
+        </activity>
+        <activity
+            android:name=".RadiLekciju"
+            android:label="@string/title_activity_radi_lekciju"
+            android:parentActivityName=".PocetnaStrana" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ucko.osnovno.PocetnaStrana" />
+        </activity>
+        <activity
+            android:name=".Izmena"
+            android:label="@string/title_activity_izmena"
+            android:parentActivityName=".Uredjivanje" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ucko.osnovno.Uredjivanje" />
+        </activity>
+        <activity
+            android:name=".Opcije"
+            android:label="@string/title_activity_opcije"
+            android:parentActivityName=".PocetnaStrana" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ucko.osnovno.PocetnaStrana" />
+        </activity>
+        <activity
+            android:name=".Izlistavanje"
+            android:label="@string/title_activity_izlistavanje"
+            android:parentActivityName=".Uredjivanje" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ucko.osnovno.Uredjivanje" />
+        </activity>
+        <activity
+            android:name=".UpravljanjeLekcijama"
+            android:label="@string/title_activity_upravljanje_lekcijama" >
+        </activity>
+        <activity
+            android:name=".UpravljanjePitanjima"
+            android:label="@string/title_activity_upravljanje_pitanjima" >
+        </activity>
+        <activity
+            android:name=".UpravljanjeKarticama"
+            android:label="@string/title_activity_upravljanje_karticama" >
+        </activity>
+    </application>
+
+</manifest>
